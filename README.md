@@ -35,20 +35,11 @@ AWS • Git • GitHub • Jupyter
 
 📊 My GitHub Contributions
 
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/iitking/iitking/output/github-snake-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/iitking/iitking/output/github-snake.svg"
-  />
-  <img
-    alt="GitHub Snake"
-    src="https://raw.githubusercontent.com/iitking/iitking/output/github-snake.svg"
-  />
-</picture>---
+<p align="center">
+  <img src="https://raw.githubusercontent.com/iitking/iitking/output/github-snake-growing.svg">
+</p>
+
+---
 
 📫 Connect With Me
 
