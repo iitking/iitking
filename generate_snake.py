@@ -1,124 +1,201 @@
+#!/usr/bin/env python3
+"""Generate an animated GitHub contribution snake as SVG (light + dark).
+
+Usage:
+    GITHUB_TOKEN=xxx python generate_snake.py iitking
+    python generate_snake.py iitking          # no token -> scrapes public page
+
+Output:
+    dist/github-snake.svg
+    dist/github-snake-dark.svg
+"""
+import json
 import os
-import requests
-import html
+import re
+import sys
+import urllib.request
+from datetime import date, timedelta
+from pathlib import Path
 
-USERNAME = "iitking"
+CELL = 14          # cell size (px)
+GAP = 3            # gap between cells
+PAD = 16           # outer padding
+STEP = 0.12        # seconds per move
+SNAKE_LEN = 5
 
-# GitHub contribution calendar
-url = f"https://github.com/users/{USERNAME}/contributions"
+THEMES = {
+    "light": {
+        "bg": "#ffffff",
+        "empty": "#ebedf0",
+        "levels": ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
+        "snake": "#8250df",
+        "head": "#6639ba",
+    },
+    "dark": {
+        "bg": "#0d1117",
+        "empty": "#161b22",
+        "levels": ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"],
+        "snake": "#a371f7",
+        "head": "#d2a8ff",
+    },
+}
 
-response = requests.get(url, timeout=20)
-response.raise_for_status()
+GQL_LEVELS = {
+    "NONE": 0, "FIRST_QUARTER": 1, "SECOND_QUARTER": 2,
+    "THIRD_QUARTER": 3, "FOURTH_QUARTER": 4,
+}
 
-text = response.text
 
-# Extract contribution SVG
-start = text.find("<svg")
-end = text.find("</svg>")
+def fetch_graphql(user, token):
+    query = """
+    query($login:String!){
+      user(login:$login){
+        contributionsCollection{
+          contributionCalendar{
+            weeks{ contributionDays{ date contributionLevel } }
+          }
+        }
+      }
+    }"""
+    req = urllib.request.Request(
+        "https://api.github.com/graphql",
+        data=json.dumps({"query": query, "variables": {"login": user}}).encode(),
+        headers={"Authorization": f"bearer {token}", "Content-Type": "application/json"},
+    )
+    with urllib.request.urlopen(req, timeout=30) as r:
+        data = json.load(r)
+    weeks = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
+    return {
+        date.fromisoformat(d["date"]): GQL_LEVELS.get(d["contributionLevel"], 0)
+        for w in weeks for d in w["contributionDays"]
+    }
 
-if start == -1 or end == -1:
-    raise RuntimeError("GitHub contribution graph could not be found")
 
-svg = text[start:end + 6]
+def fetch_scrape(user):
+    req = urllib.request.Request(
+        f"https://github.com/users/{user}/contributions",
+        headers={"User-Agent": "Mozilla/5.0"},
+    )
+    with urllib.request.urlopen(req, timeout=30) as r:
+        html = r.read().decode("utf-8", "ignore")
+    out = {}
+    for tag in re.findall(r"<td[^>]*ContributionCalendar-day[^>]*>", html):
+        d = re.search(r'data-date="(\d{4}-\d{2}-\d{2})"', tag)
+        l = re.search(r'data-level="(\d)"', tag)
+        if d and l:
+            out[date.fromisoformat(d.group(1))] = int(l.group(1))
+    return out
 
-# Basic SVG dimensions
-width = 950
-height = 180
 
-# Create animated custom SVG
-output = f'''<svg xmlns="http://www.w3.org/2000/svg"
-     width="{width}"
-     height="{height}"
-     viewBox="0 0 {width} {height}">
+def build_grid(days):
+    """Return (cols, cells) where cells = {(col,row): level}. Sunday = row 0."""
+    first = min(days)
+    start = first - timedelta(days=(first.weekday() + 1) % 7)
+    cells = {}
+    for d, lvl in days.items():
+        col = (d - start).days // 7
+        row = (d.weekday() + 1) % 7
+        cells[(col, row)] = lvl
+    cols = max(c for c, _ in cells) + 1
+    return cols, cells
 
-  <style>
-    .snake {{
-      fill: none;
-      stroke: #2da44e;
-      stroke-width: 7;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }}
 
-    .head {{
-      fill: #2da44e;
-    }}
+def snake_path(cols):
+    """Zig-zag over every column: down, up, down, ..."""
+    path = []
+    for c in range(cols):
+        rows = range(7) if c % 2 == 0 else range(6, -1, -1)
+        path.extend((c, r) for r in rows)
+    return path
 
-    .block {{
-      fill: #216e39;
-    }}
 
-    @keyframes grow {{
-      0% {{
-        stroke-dashoffset: 1000;
-      }}
-      100% {{
-        stroke-dashoffset: 0;
-      }}
-    }}
+def pos(col, row):
+    return PAD + col * (CELL + GAP), PAD + row * (CELL + GAP)
 
-    .body {{
-      stroke-dasharray: 1000;
-      stroke-dashoffset: 1000;
-      animation: grow 12s linear infinite;
-    }}
-  </style>
 
-  <rect width="100%" height="100%" fill="transparent"/>
+def render(cols, cells, theme):
+    t = THEMES[theme]
+    path = snake_path(cols)
+    n = len(path)
+    total = n * STEP
+    width = PAD * 2 + cols * (CELL + GAP) - GAP
+    height = PAD * 2 + 7 * (CELL + GAP) - GAP
 
-  <!-- Contribution blocks -->
-  <g opacity="0.9">
-'''
+    # index at which the head reaches each cell
+    reach = {cell: i for i, cell in enumerate(path)}
 
-# Add contribution-like grid
-for y in range(7):
-    for x in range(53):
-        px = 20 + x * 17
-        py = 20 + y * 17
+    out = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" '
+        f'width="{width}" height="{height}">',
+        f'<rect width="100%" height="100%" fill="{t["bg"]}" rx="6"/>',
+    ]
 
-        output += f'''
-        <rect class="block"
-              x="{px}"
-              y="{py}"
-              width="12"
-              height="12"
-              rx="2">
-          <animate
-            attributeName="opacity"
-            values="1;1;0"
-            begin="{(x + y * 53) * 0.025}s"
-            dur="0.4s"
-            repeatCount="indefinite"/>
-        </rect>
-'''
+    # contribution cells (eaten when the head passes)
+    for (c, r), lvl in sorted(cells.items()):
+        x, y = pos(c, r)
+        color = t["levels"][lvl]
+        rect = f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="3" fill="{color}"'
+        if lvl > 0 and (c, r) in reach:
+            p = reach[(c, r)] / n
+            p = min(max(p, 0.0001), 0.9999)
+            rect += (
+                f'><animate attributeName="fill" calcMode="discrete" dur="{total:.2f}s" '
+                f'repeatCount="indefinite" keyTimes="0;{p:.5f};1" '
+                f'values="{color};{t["empty"]};{t["empty"]}"/></rect>'
+            )
+        else:
+            rect += "/>"
+        out.append(rect)
 
-output += '''
-  </g>
+    # snake segments: segment k is the head's position k steps ago
+    key_times = ";".join(f"{i / n:.5f}" for i in range(n))
+    for k in range(SNAKE_LEN - 1, -1, -1):  # draw head last (on top)
+        xs, ys = [], []
+        for i in range(n):
+            cx, cy = path[max(i - k, 0)]
+            x, y = pos(cx, cy)
+            xs.append(str(x))
+            ys.append(str(y))
+        color = t["head"] if k == 0 else t["snake"]
+        size = CELL if k == 0 else CELL - 2
+        off = 0 if k == 0 else 1
+        x0, y0 = xs[0], ys[0]
+        out.append(
+            f'<rect width="{size}" height="{size}" rx="4" fill="{color}" '
+            f'x="{int(x0) + off}" y="{int(y0) + off}">'
+            f'<animate attributeName="x" calcMode="discrete" dur="{total:.2f}s" '
+            f'repeatCount="indefinite" keyTimes="{key_times}" '
+            f'values="{";".join(str(int(v) + off) for v in xs)}"/>'
+            f'<animate attributeName="y" calcMode="discrete" dur="{total:.2f}s" '
+            f'repeatCount="indefinite" keyTimes="{key_times}" '
+            f'values="{";".join(str(int(v) + off) for v in ys)}"/>'
+            f"</rect>"
+        )
 
-  <!-- Growing snake -->
-  <path
-    class="snake body"
-    d="
-      M20 140
-      C80 140 80 30 140 30
-      S200 140 260 140
-      S320 30 380 30
-      S440 140 500 140
-      S560 30 620 30
-      S680 140 740 140
-      S800 30 860 30
-      S900 100 930 100
-    />
+    out.append("</svg>")
+    return "\n".join(out)
 
-  <!-- Snake head -->
-  <circle class="head" cx="930" cy="100" r="8"/>
 
-</svg>
-'''
+def main():
+    user = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("GITHUB_USER", "iitking")
+    token = os.environ.get("GITHUB_TOKEN")
 
-os.makedirs("dist", exist_ok=True)
+    try:
+        days = fetch_graphql(user, token) if token else fetch_scrape(user)
+    except Exception as e:  # fall back to scraping if API fails
+        print(f"Primary fetch failed ({e}), trying scrape...", file=sys.stderr)
+        days = fetch_scrape(user)
 
-with open("dist/github-snake-growing.svg", "w", encoding="utf-8") as f:
-    f.write(output)
+    if not days:
+        sys.exit("No contribution data found.")
 
-print("Snake generated successfully!")
+    cols, cells = build_grid(days)
+    out_dir = Path("dist")
+    out_dir.mkdir(exist_ok=True)
+    (out_dir / "github-snake.svg").write_text(render(cols, cells, "light"), encoding="utf-8")
+    (out_dir / "github-snake-dark.svg").write_text(render(cols, cells, "dark"), encoding="utf-8")
+    print(f"Done: {len(days)} days, {cols} weeks -> dist/")
+
+
+if __name__ == "__main__":
+    main()
