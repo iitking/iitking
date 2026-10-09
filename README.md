@@ -130,11 +130,11 @@ I'm an **IIT Roorkee Electrical Engineering** graduate who builds **AI systems e
 
 ## 🐍 Contribution Graph
 
-<div align="center">
-
-Show Image
-
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/iitking/iitking/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/iitking/iitking/output/github-snake.svg">
+  <img alt="GitHub Snake" src="https://raw.githubusercontent.com/iitking/iitking/output/github-snake.svg">
+</picture>
 
 ---
 
