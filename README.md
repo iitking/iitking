@@ -28,7 +28,7 @@ I'm an **IIT Roorkee Electrical Engineering** graduate who builds **AI systems e
 
 ## ⚡ Featured Projects
  
-| 🚀 Project | 💡 What it Does | 🛠️ Stack |
+| 🚀 Project    | 💡 What it Does | 🛠️ Stack |
 | :-- | :-- | :-- |
 | [**OpsPilot AI**](https://github.com/iitking/opspilot-ai) | **Multi-agent incident-response platform**: 8 **LangGraph** agents investigate logs, metrics and deployments, find the **root cause**, and gate risky fixes behind **human approval**, with **LangSmith** evaluation | `Python` `FastAPI` `LangGraph` `LangSmith` `pgvector` `n8n` `Docker` |
 | [**ORVANTA AI**](https://github.com/iitking/orvanta-ai) | 🚧 **AI business-intelligence platform** in development: **LangGraph** agents (sales, support, customer, data, strategy), **churn and lead-scoring ML**, RAG, JWT/RBAC and n8n workflows | `Python` `FastAPI` `LangGraph` `scikit-learn` `Qdrant` `Next.js` |
