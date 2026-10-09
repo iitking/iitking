@@ -30,11 +30,11 @@ I'm an **IIT Roorkee Electrical Engineering** graduate who builds **AI systems e
  
 | 🚀 Project    | 💡 What it Does | 🛠️ Stack |
 | :-- | :-- | :-- |
-| [**OpsPilot AI**](https://github.com/iitking/opspilot-ai) | **Multi-agent incident-response platform**: 8 **LangGraph** agents investigate logs, metrics and deployments, find the **root cause**, and gate risky fixes behind **human approval**, with **LangSmith** evaluation | `Python` `FastAPI` `LangGraph` `LangSmith` `pgvector` `n8n` `Docker` |
-| [**ORVANTA AI**](https://github.com/iitking/orvanta-ai) | 🚧 **AI business-intelligence platform** in development: **LangGraph** agents (sales, support, customer, data, strategy), **churn and lead-scoring ML**, RAG, JWT/RBAC and n8n workflows | `Python` `FastAPI` `LangGraph` `scikit-learn` `Qdrant` `Next.js` |
-| [**FinSphere AI**](https://github.com/iitking/FinSphere-AI-Autonomous-FinTech-Multi-Agent-Platform) | Autonomous **multi-agent** fintech platform: 5 **Claude** agents (analysis, risk, portfolio, fraud, compliance) with **guardrails** and Indian PII redaction | `Python` `FastAPI` `Claude API` `Pydantic` `Docker` |
-| [**IITIAN Voice Assistant**](https://github.com/iitking/IITIAN-AI-Voice-Assistant) | **Agentic** voice assistant for English, Hindi and Hinglish with **LLM tool calling**, long-term memory and **RAG** | `Python` `FastAPI` `Ollama` `SQLite` `RAG` |
-| [**RAG Evaluation Tool**](https://github.com/iitking/rag-evaluation-tool) | Benchmarks **chunk size + embedding model** combos on your own documents, scored by an **LLM judge** for relevance and faithfulness | `FastAPI` `Streamlit` `ChromaDB` `Groq` `Docker` |
+| [**OpsPilot&nbsp;AI**](https://github.com/iitking/opspilot-ai) | **Multi-agent incident-response platform**: 8 **LangGraph** agents investigate logs, metrics and deployments, find the **root cause**, and gate risky fixes behind **human approval**, with **LangSmith** evaluation | `Python` `FastAPI` `LangGraph` `LangSmith` `pgvector` `n8n` `Docker` |
+| [**ORVANTA&nbsp;AI**](https://github.com/iitking/orvanta-ai) | 🚧 **AI business-intelligence platform** in development: **LangGraph** agents (sales, support, customer, data, strategy), **churn and lead-scoring ML**, RAG, JWT/RBAC and n8n workflows | `Python` `FastAPI` `LangGraph` `scikit-learn` `Qdrant` `Next.js` |
+| [**FinSphere&nbsp;AI**](https://github.com/iitking/FinSphere-AI-Autonomous-FinTech-Multi-Agent-Platform) | Autonomous **multi-agent** fintech platform: 5 **Claude** agents (analysis, risk, portfolio, fraud, compliance) with **guardrails** and Indian PII redaction | `Python` `FastAPI` `Claude API` `Pydantic` `Docker` |
+| [**AI&nbsp;Voice Assistant**](https://github.com/iitking/IITIAN-AI-Voice-Assistant) | **Agentic** voice assistant for English, Hindi and Hinglish with **LLM tool calling**, long-term memory and **RAG** | `Python` `FastAPI` `Ollama` `SQLite` `RAG` |
+| [**RAG&nbsp;Evaluation Tool**](https://github.com/iitking/rag-evaluation-tool) | Benchmarks **chunk size + embedding model** combos on your own documents, scored by an **LLM judge** for relevance and faithfulness | `FastAPI` `Streamlit` `ChromaDB` `Groq` `Docker` |
 
 
 > 👉 More work in my [repositories](https://github.com/iitking?tab=repositories).
