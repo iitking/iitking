@@ -27,14 +27,15 @@ I'm an **IIT Roorkee Electrical Engineering** graduate who builds **AI systems e
 ---
 
 ## ⚡ Featured Projects
-
+ 
 | 🚀 Project | 💡 What it Does | 🛠️ Stack |
 | :-- | :-- | :-- |
+| [**OpsPilot AI**](https://github.com/iitking/opspilot-ai) | **Multi-agent incident-response platform**: 8 **LangGraph** agents investigate logs, metrics and deployments, find the **root cause**, and gate risky fixes behind **human approval**, with **LangSmith** evaluation | `Python` `FastAPI` `LangGraph` `LangSmith` `pgvector` `n8n` `Docker` |
+| [**ORVANTA AI**](https://github.com/iitking/orvanta-ai) | 🚧 **AI business-intelligence platform** in development: **LangGraph** agents (sales, support, customer, data, strategy), **churn and lead-scoring ML**, RAG, JWT/RBAC and n8n workflows | `Python` `FastAPI` `LangGraph` `scikit-learn` `Qdrant` `Next.js` |
 | [**FinSphere AI**](https://github.com/iitking/FinSphere-AI-Autonomous-FinTech-Multi-Agent-Platform) | Autonomous **multi-agent** fintech platform: 5 **Claude** agents (analysis, risk, portfolio, fraud, compliance) with **guardrails** and Indian PII redaction | `Python` `FastAPI` `Claude API` `Pydantic` `Docker` |
 | [**IITIAN Voice Assistant**](https://github.com/iitking/IITIAN-AI-Voice-Assistant) | **Agentic** voice assistant for English, Hindi and Hinglish with **LLM tool calling**, long-term memory and **RAG** | `Python` `FastAPI` `Ollama` `SQLite` `RAG` |
 | [**RAG Evaluation Tool**](https://github.com/iitking/rag-evaluation-tool) | Benchmarks **chunk size + embedding model** combos on your own documents, scored by an **LLM judge** for relevance and faithfulness | `FastAPI` `Streamlit` `ChromaDB` `Groq` `Docker` |
-| [**Self-Driving Car**](https://github.com/iitking/AI-Powered-Autonomous-Self-Driving-Car) | **Computer vision** autonomous vehicle stack: YOLO detection, lane following, A\* planning and **PID/MPC** control with sensor fusion | `OpenCV` `YOLO` `PyTorch` `C/C++` `Arduino` |
-| [**Multimodal Clinical Fusion Net**](https://github.com/iitking/Multimodal-Clinical-Fusion-Net) | **Deep learning** model that fuses multiple **clinical data modalities** for stronger predictions than any single source | `Python` `Deep Learning` |
+
 
 > 👉 More work in my [repositories](https://github.com/iitking?tab=repositories).
 
