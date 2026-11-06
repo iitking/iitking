@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Nivesh%20Kumar%20Meena&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=IIT%20Roorkee%20EE&descAlignY=55&descSize=18" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Nivesh%20Kumar%20Meena&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=AI%20Engineer%20%E2%80%A2%20IIT%20Roorkee%20EE&descAlignY=55&descSize=18" />
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=820&lines=Multi-Agent+AI+%7C+LangGraph+%7C+LangSmith+%7C+MCP;Agentic+RAG+%7C+MLOps+%7C+RAG+Evaluation+%26+CI%2FCD;Computer+Vision+%7C+Sensor+Fusion+%7C+Autonomous+Systems;FastAPI+%7C+Docker+%7C+PostgreSQL+%7C+pgvector+%7C+n8n;Building+production-grade+AI+systems+%E2%80%94+end+to+end" alt="Typing SVG" />
 
