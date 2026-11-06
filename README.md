@@ -6,6 +6,9 @@
 
 <br/>
 
+<a href="https://portfolio-eight-rho-nym9zlak6a.vercel.app">
+  <img src="https://img.shields.io/badge/Portfolio-Live%20Website-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+</a>
 <a href="https://www.linkedin.com/in/nivesh-kumar-meena-a31465221/">
   <img src="https://img.shields.io/badge/LinkedIn-Nivesh%20Kumar%20Meena-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
@@ -50,6 +53,7 @@ class NiveshKumarMeena:
 - 🚗 **AI × Electrical Engineering** — Pure Pursuit + PID control, Extended Kalman Filter sensor fusion, YOLO-based perception, embedded ESP32/Raspberry Pi
 - 🧪 **Engineering Quality** — Automated pytest suites, Docker, GitHub Actions CI, clear API documentation, production-ready RESTful services
 - ☁️ **Currently Deepening** — MLOps on AWS, Kubernetes, Terraform infrastructure-as-code
+- 🌐 **Portfolio** — [portfolio-eight-rho-nym9zlak6a.vercel.app](https://portfolio-eight-rho-nym9zlak6a.vercel.app)
 
 ---
 
@@ -226,6 +230,10 @@ class NiveshKumarMeena:
 
 <a href="https://www.linkedin.com/in/nivesh-kumar-meena-a31465221/">
   <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+&nbsp;
+<a href="https://portfolio-eight-rho-nym9zlak6a.vercel.app">
+  <img src="https://img.shields.io/badge/Portfolio-Live%20Website-000000?style=for-the-badge&logo=vercel&logoColor=white" />
 </a>
 &nbsp;
 <a href="mailto:niveshkr149@gmail.com">
