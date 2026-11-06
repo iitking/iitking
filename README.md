@@ -53,7 +53,7 @@ class NiveshKumarMeena:
 - 🚗 **AI × Electrical Engineering** — Pure Pursuit + PID control, Extended Kalman Filter sensor fusion, YOLO-based perception, embedded ESP32/Raspberry Pi
 - 🧪 **Engineering Quality** — Automated pytest suites, Docker, GitHub Actions CI, clear API documentation, production-ready RESTful services
 - ☁️ **Currently Deepening** — MLOps on AWS, Kubernetes, Terraform infrastructure-as-code
-- 🌐 **Portfolio** — [portfolio-eight-rho-nym9zlak6a.vercel.app](https://portfolio-eight-rho-nym9zlak6a.vercel.app)
+- 🌐 **Portfolio** — [Nivesh Kumar Meena](https://portfolio-eight-rho-nym9zlak6a.vercel.app)
 
 ---
 
