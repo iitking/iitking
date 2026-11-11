@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Nivesh%20Kumar%20Meena&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=AI%20Engineer%20%E2%80%A2%20IIT%20Roorkee%20EE&descAlignY=55&descSize=18" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=820&lines=Multi-Agent+AI+%7C+LangGraph+%7C+LangSmith+%7C+MCP;Agentic+RAG+%7C+MLOps+%7C+RAG+Evaluation+%26+CI%2FCD;Computer+Vision+%7C+Sensor+Fusion+%7C+Autonomous+Systems;FastAPI+%7C+Docker+%7C+PostgreSQL+%7C+pgvector+%7C+n8n;Building+production-grade+AI+systems+%E2%80%94+end+to+end" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2600&pause=800&color=58A6FF&center=true&vCenter=true&width=860&lines=Multi-Agent+AI+%7C+LangGraph+%7C+CrewAI+%7C+Google+ADK+%7C+MCP;LLMOps+%7C+QLoRA+Fine-Tuning+%7C+DPO+%7C+vLLM+Serving;Agentic+RAG+%7C+GraphRAG+%7C+CRAG+%7C+CI%2FCD+Quality+Gates;Real-Time+Voice+AI+(%3C800ms)+%7C+Multimodal+Video+Intelligence;Building+production-grade+AI+systems+%E2%80%94+tested+%26+shipped" alt="Typing SVG" />
 
 <br/>
 
@@ -22,7 +22,7 @@
 <br/><br/>
 
 <img src="https://img.shields.io/badge/IIT%20Roorkee-B.Tech%20Electrical%20Engineering-1f6feb?style=for-the-badge&logo=graduation-cap" />
-<img src="https://img.shields.io/badge/Focus-Agentic%20AI%20%26%20MLOps-8957e5?style=for-the-badge&logo=openai&logoColor=white" />
+<img src="https://img.shields.io/badge/Focus-Agentic%20AI%20%26%20LLMOps-8957e5?style=for-the-badge&logo=openai&logoColor=white" />
 <img src="https://img.shields.io/badge/Status-Open%20to%20Opportunities-2ea043?style=for-the-badge&logo=checkmarx&logoColor=white" />
 
 <br/><br/>
@@ -35,24 +35,26 @@
 
 ## 👨‍💻 About Me
 
-I'm a **B.Tech Electrical Engineering** student at **IIT Roorkee** who designs and ships **AI systems end to end** — from multi-agent orchestration and RAG pipelines to autonomous control systems and embedded hardware.
+I'm a **B.Tech Electrical Engineering** student at **IIT Roorkee** who architects and ships **production-grade AI systems end-to-end** — spanning multi-agent orchestration, LLMOps fine-tuning and high-throughput serving, real-time streaming voice systems, advanced RAG architectures, and autonomous control platforms.
 
 ```python
 class NiveshKumarMeena:
     location     = "IIT Roorkee, India"
     education    = "B.Tech Electrical Engineering"
-    focus        = ["Agentic AI", "Multi-Agent Systems", "MLOps", "RAG Evaluation"]
-    currently    = ["LangGraph stateful agents", "RAG CI/CD quality gates", "AWS for ML"]
-    ask_me_about = ["LangGraph", "LangSmith", "MCP tool calling", "RAG pipelines",
-                    "FastAPI microservices", "Computer Vision", "Autonomous systems"]
+    focus        = ["Agentic AI & Swarms", "LLMOps & Fine-Tuning", "Real-Time Voice AI", "Advanced RAG & Evaluation"]
+    currently    = ["LangGraph & CrewAI workflows", "vLLM & QLoRA serving pipelines", "Real-time Voice & Multimodal Video"]
+    ask_me_about = ["LangGraph", "CrewAI", "Google ADK", "MCP tool calling", "GraphRAG & CRAG",
+                    "QLoRA / DPO / vLLM", "Streaming Voice AI (<800ms)", "FastAPI & Docker sandboxing"]
     philosophy   = "Build it. Test it. Document it. Ship it."
 ```
 
-- 🤖 **Agentic AI** — Multi-agent orchestration, bounded reflection loops, HITL approval gates, LLM evaluation with LangSmith
-- 🔎 **RAG & MLOps** — Hybrid retrieval (dense + sparse + RRF), hallucination guardrails, CI/CD quality gates that block regressions
-- 🚗 **AI × Electrical Engineering** — Pure Pursuit + PID control, Extended Kalman Filter sensor fusion, YOLO-based perception, embedded ESP32/Raspberry Pi
-- 🧪 **Engineering Quality** — Automated pytest suites, Docker, GitHub Actions CI, clear API documentation, production-ready RESTful services
-- ☁️ **Currently Deepening** — MLOps on AWS, Kubernetes, Terraform infrastructure-as-code
+- 🤖 **Agentic AI & Swarms** — Multi-agent orchestration with **LangGraph**, **CrewAI**, and **Google ADK**; stateful workflows, bounded self-reflection loops, Human-in-the-Loop (HITL) approval gates, and **Model Context Protocol (MCP)** tool calling.
+- 🧠 **LLMOps, Fine-Tuning & Serving** — Domain fine-tuning with **QLoRA (4-bit NF4)**, behavioral alignment via **DPO (Direct Preference Optimization)**, **4-bit AWQ** quantization, and low-latency serving with **vLLM** behind OpenAI-compatible API Gateways with semantic prompt caching and rate limiting.
+- 🔎 **Advanced RAG & Retrieval Systems** — Hybrid retrieval (dense embeddings + BM25 lexical fused via **RRF**), **GraphRAG (NetworkX)**, Corrective RAG (**CRAG**), semantic caching, and CI/CD quality gates that block pull requests on hallucination regressions.
+- 🎙️ **Real-Time Voice & Multimodal Intelligence** — Sub-800ms TTFA voice AI agents featuring streaming STT/LLM/TTS, Voice Activity Detection (**VAD**), sub-50ms barge-in interruption handling, WebSockets, and **Twilio PSTN telephony** integration; multimodal video intelligence combining Whisper audio, visual frame analysis, and slide OCR.
+- 🛡️ **Autonomous Coding & Security** — Ephemeral Docker execution sandboxes, AST code mapping, automated test self-healing, automated secrets scanning, and threat detection.
+- 🚗 **AI × Electrical Engineering** — Pure Pursuit + PID lateral control, Extended Kalman Filter (EKF) sensor fusion, YOLO perception, and embedded systems (ESP32 / Raspberry Pi).
+- 🧪 **Engineering Rigor** — Automated pytest suites (unit, integration & E2E), Docker Compose, GitHub Actions CI/CD pipelines, and strictly validated RESTful architectures.
 - 🌐 **Portfolio** — [Nivesh Kumar Meena](https://portfolio-eight-rho-nym9zlak6a.vercel.app)
 
 ---
@@ -113,77 +115,280 @@ class NiveshKumarMeena:
 
 **Languages**
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C%2FC%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+<a href="https://www.python.org/" target="_blank">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+</a>
+<a href="https://isocpp.org/" target="_blank">
+  <img src="https://img.shields.io/badge/C%2FC%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C/C++" />
+</a>
+<a href="https://www.postgresql.org/docs/current/sql.html" target="_blank">
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
+</a>
+<a href="https://www.typescriptlang.org/" target="_blank">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+</a>
 
-**Agentic AI & LLM Ecosystem**
+<br/>
 
-![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![LangSmith](https://img.shields.io/badge/LangSmith-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![MCP](https://img.shields.io/badge/Model%20Context%20Protocol-8957e5?style=for-the-badge)
-![Claude API](https://img.shields.io/badge/Anthropic%20Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
-![Gemini API](https://img.shields.io/badge/Google%20Gemini%20API-4285F4?style=for-the-badge&logo=google&logoColor=white)
-![Groq](https://img.shields.io/badge/Groq-F55036?style=for-the-badge)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
-![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
-![Multi-Agent](https://img.shields.io/badge/Multi--Agent%20Systems-8957e5?style=for-the-badge)
-![Tool Calling](https://img.shields.io/badge/LLM%20Tool%20Calling-8957e5?style=for-the-badge)
-![HITL](https://img.shields.io/badge/Human--in--the--Loop-2ea043?style=for-the-badge)
+**Agentic AI & Orchestration Ecosystem**
 
-**RAG & Vector Stores**
+<a href="https://langchain-ai.github.io/langgraph/" target="_blank">
+  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" alt="LangGraph" />
+</a>
+<a href="https://www.crewai.com/" target="_blank">
+  <img src="https://img.shields.io/badge/CrewAI-FF4B4B?style=for-the-badge&logo=crewai&logoColor=white" alt="CrewAI" />
+</a>
+<a href="https://google.github.io/adk-docs/" target="_blank">
+  <img src="https://img.shields.io/badge/Google_ADK-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google ADK" />
+</a>
+<a href="https://modelcontextprotocol.io/" target="_blank">
+  <img src="https://img.shields.io/badge/Model_Context_Protocol-8957e5?style=for-the-badge" alt="MCP" />
+</a>
+<a href="https://www.langchain.com/langsmith" target="_blank">
+  <img src="https://img.shields.io/badge/LangSmith-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" alt="LangSmith" />
+</a>
+<a href="https://www.langchain.com/" target="_blank">
+  <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" alt="LangChain" />
+</a>
+<a href="https://www.litellm.ai/" target="_blank">
+  <img src="https://img.shields.io/badge/LiteLLM-111111?style=for-the-badge" alt="LiteLLM" />
+</a>
+<a href="https://docs.anthropic.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Anthropic_Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude API" />
+</a>
+<a href="https://ai.google.dev/" target="_blank">
+  <img src="https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Gemini API" />
+</a>
+<a href="https://groq.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Groq-F55036?style=for-the-badge" alt="Groq" />
+</a>
+<a href="https://ollama.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white" alt="Ollama" />
+</a>
+<a href="https://n8n.io/" target="_blank">
+  <img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n" />
+</a>
+<a href="https://github.com/langchain-ai/langgraph" target="_blank">
+  <img src="https://img.shields.io/badge/Multi--Agent_Systems-8957e5?style=for-the-badge" alt="Multi-Agent Systems" />
+</a>
+<a href="https://docs.anthropic.com/en/docs/build-with-claude/tool-use" target="_blank">
+  <img src="https://img.shields.io/badge/LLM_Tool_Calling-8957e5?style=for-the-badge" alt="Tool Calling" />
+</a>
+<a href="https://langchain-ai.github.io/langgraph/concepts/human_in_the_loop/" target="_blank">
+  <img src="https://img.shields.io/badge/Human--in--the--Loop-2ea043?style=for-the-badge" alt="HITL" />
+</a>
 
-![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge)
-![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=for-the-badge)
-![pgvector](https://img.shields.io/badge/pgvector-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Sentence Transformers](https://img.shields.io/badge/Sentence--Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
-![BM25](https://img.shields.io/badge/BM25%20%2B%20RRF%20Hybrid-8957e5?style=for-the-badge)
-![Langfuse](https://img.shields.io/badge/Langfuse-000000?style=for-the-badge)
-![RAG Evaluation](https://img.shields.io/badge/LLM--as--Judge%20Eval-2ea043?style=for-the-badge)
+<br/>
+
+**LLMOps, Fine-Tuning & High-Throughput Serving**
+
+<a href="https://docs.vllm.ai/" target="_blank">
+  <img src="https://img.shields.io/badge/vLLM_Serving-8957e5?style=for-the-badge" alt="vLLM" />
+</a>
+<a href="https://github.com/artidoro/qlora" target="_blank">
+  <img src="https://img.shields.io/badge/QLoRA_(4--bit_NF4)-FF6F00?style=for-the-badge" alt="QLoRA" />
+</a>
+<a href="https://huggingface.co/docs/peft/index" target="_blank">
+  <img src="https://img.shields.io/badge/PEFT_%26_TRL-EE4C2C?style=for-the-badge&logo=huggingface&logoColor=white" alt="PEFT & TRL" />
+</a>
+<a href="https://huggingface.co/docs/trl/dpo_trainer" target="_blank">
+  <img src="https://img.shields.io/badge/DPO_Alignment-1f6feb?style=for-the-badge" alt="DPO Alignment" />
+</a>
+<a href="https://github.com/casper-hansen/AutoAWQ" target="_blank">
+  <img src="https://img.shields.io/badge/4--bit_AWQ-3fb950?style=for-the-badge" alt="AWQ Quantization" />
+</a>
+<a href="https://huggingface.co/" target="_blank">
+  <img src="https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face" />
+</a>
+<a href="https://prometheus.io/" target="_blank">
+  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" alt="Prometheus" />
+</a>
+<a href="https://grafana.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white" alt="Grafana" />
+</a>
+<a href="https://locust.io/" target="_blank">
+  <img src="https://img.shields.io/badge/Locust_Load_Testing-009688?style=for-the-badge" alt="Locust" />
+</a>
+
+<br/>
+
+**Real-Time Voice, Audio & Multimodal Video**
+
+<a href="https://fastapi.tiangolo.com/advanced/websockets/" target="_blank">
+  <img src="https://img.shields.io/badge/Real--Time_Voice_AI_(%3C800ms)-8957e5?style=for-the-badge" alt="Real-Time Voice AI" />
+</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" target="_blank">
+  <img src="https://img.shields.io/badge/WebSockets_Audio-010101?style=for-the-badge&logo=socketdotio&logoColor=white" alt="WebSockets" />
+</a>
+<a href="https://github.com/snakers4/silero-vad" target="_blank">
+  <img src="https://img.shields.io/badge/VAD_%26_Barge--In_(%3C50ms)-2ea043?style=for-the-badge" alt="VAD & Barge-in" />
+</a>
+<a href="https://www.twilio.com/docs/voice" target="_blank">
+  <img src="https://img.shields.io/badge/Twilio_PSTN-F22F46?style=for-the-badge&logo=twilio&logoColor=white" alt="Twilio" />
+</a>
+<a href="https://github.com/SYSTRAN/faster-whisper" target="_blank">
+  <img src="https://img.shields.io/badge/faster--whisper-00A67E?style=for-the-badge&logo=openai&logoColor=white" alt="faster-whisper" />
+</a>
+<a href="https://huggingface.co/models?pipeline_tag=video-text-to-text" target="_blank">
+  <img src="https://img.shields.io/badge/Multimodal_Video_QA-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Multimodal Video QA" />
+</a>
+<a href="https://github.com/JaidedAI/EasyOCR" target="_blank">
+  <img src="https://img.shields.io/badge/EasyOCR-5C3EE8?style=for-the-badge" alt="EasyOCR" />
+</a>
+
+<br/>
+
+**RAG, Vector Stores & Knowledge Retrieval**
+
+<a href="https://www.trychroma.com/" target="_blank">
+  <img src="https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge" alt="ChromaDB" />
+</a>
+<a href="https://qdrant.tech/" target="_blank">
+  <img src="https://img.shields.io/badge/Qdrant-DC244C?style=for-the-badge" alt="Qdrant" />
+</a>
+<a href="https://github.com/pgvector/pgvector" target="_blank">
+  <img src="https://img.shields.io/badge/pgvector-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="pgvector" />
+</a>
+<a href="https://networkx.org/" target="_blank">
+  <img src="https://img.shields.io/badge/GraphRAG_(NetworkX)-00599C?style=for-the-badge" alt="GraphRAG" />
+</a>
+<a href="https://arxiv.org/abs/2401.15884" target="_blank">
+  <img src="https://img.shields.io/badge/Corrective_RAG_(CRAG)-8957e5?style=for-the-badge" alt="CRAG" />
+</a>
+<a href="https://github.com/dorianbrown/rank_bm25" target="_blank">
+  <img src="https://img.shields.io/badge/BM25_%2B_RRF_Hybrid-3fb950?style=for-the-badge" alt="BM25" />
+</a>
+<a href="https://redis.io/solutions/semantic-caching/" target="_blank">
+  <img src="https://img.shields.io/badge/Semantic_Cache_(Redis)-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Semantic Cache" />
+</a>
+<a href="https://sbert.net/" target="_blank">
+  <img src="https://img.shields.io/badge/Sentence--Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Sentence Transformers" />
+</a>
+<a href="https://langfuse.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Langfuse-000000?style=for-the-badge" alt="Langfuse" />
+</a>
+<a href="https://docs.smith.langchain.com/concepts/evaluation" target="_blank">
+  <img src="https://img.shields.io/badge/LLM--as--Judge_Eval-2ea043?style=for-the-badge" alt="LLM-as-a-Judge" />
+</a>
+
+<br/>
 
 **ML, Deep Learning & Computer Vision**
 
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-189ABF?style=for-the-badge)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logoColor=black)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+<a href="https://pytorch.org/" target="_blank">
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
+</a>
+<a href="https://www.tensorflow.org/" target="_blank">
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
+</a>
+<a href="https://scikit-learn.org/" target="_blank">
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn" />
+</a>
+<a href="https://xgboost.readthedocs.io/" target="_blank">
+  <img src="https://img.shields.io/badge/XGBoost-189ABF?style=for-the-badge" alt="XGBoost" />
+</a>
+<a href="https://opencv.org/" target="_blank">
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
+</a>
+<a href="https://ultralytics.com/" target="_blank">
+  <img src="https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logoColor=black" alt="YOLO" />
+</a>
+<a href="https://pandas.pydata.org/" target="_blank">
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+</a>
+<a href="https://numpy.org/" target="_blank">
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+</a>
+<a href="https://plotly.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly" />
+</a>
 
-**Backend, APIs & Frontend**
+<br/>
 
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT%20%2B%20RBAC-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+**Backend, Full-Stack & Security**
 
-**Databases & Infrastructure**
+<a href="https://fastapi.tiangolo.com/" target="_blank">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+</a>
+<a href="https://docs.pydantic.dev/" target="_blank">
+  <img src="https://img.shields.io/badge/Pydantic_v2-E92063?style=for-the-badge&logo=pydantic&logoColor=white" alt="Pydantic" />
+</a>
+<a href="https://nextjs.org/" target="_blank">
+  <img src="https://img.shields.io/badge/Next.js_14-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+</a>
+<a href="https://react.dev/" target="_blank">
+  <img src="https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+</a>
+<a href="https://streamlit.io/" target="_blank">
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
+</a>
+<a href="https://tailwindcss.com/" target="_blank">
+  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="TailwindCSS" />
+</a>
+<a href="https://www.docker.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Docker_Sandboxes-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Sandboxes" />
+</a>
+<a href="https://docs.python.org/3/library/ast.html" target="_blank">
+  <img src="https://img.shields.io/badge/AST_Secrets_Scanner-DC2626?style=for-the-badge" alt="AST Secrets Scanner" />
+</a>
+<a href="https://jwt.io/" target="_blank">
+  <img src="https://img.shields.io/badge/JWT_%2B_RBAC-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" alt="JWT + RBAC" />
+</a>
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+<br/>
 
-**Robotics, Control & Embedded**
+**Databases, Infrastructure & MLOps**
 
-![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
-![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white)
-![PID/MPC](https://img.shields.io/badge/PID%20%2F%20Pure%20Pursuit%20%2F%20EKF-444444?style=for-the-badge)
+<a href="https://www.postgresql.org/" target="_blank">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+</a>
+<a href="https://redis.io/" target="_blank">
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" />
+</a>
+<a href="https://www.sqlite.org/" target="_blank">
+  <img src="https://img.shields.io/badge/SQLite_(aiosqlite)-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
+</a>
+<a href="https://www.docker.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+</a>
+<a href="https://kubernetes.io/" target="_blank">
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" />
+</a>
+<a href="https://github.com/features/actions" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+</a>
+<a href="https://docs.pytest.org/" target="_blank">
+  <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="Pytest" />
+</a>
+<a href="https://gitpython.readthedocs.io/" target="_blank">
+  <img src="https://img.shields.io/badge/GitPython_%26_PyGithub-F05032?style=for-the-badge&logo=git&logoColor=white" alt="GitPython" />
+</a>
+<a href="https://aws.amazon.com/" target="_blank">
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS" />
+</a>
+<a href="https://www.terraform.io/" target="_blank">
+  <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform" />
+</a>
+
+<br/>
+
+**Robotics, Control & Embedded Hardware**
+
+<a href="https://www.arduino.cc/" target="_blank">
+  <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" alt="Arduino" />
+</a>
+<a href="https://www.espressif.com/en/products/socs/esp32" target="_blank">
+  <img src="https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32" />
+</a>
+<a href="https://www.raspberrypi.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Raspberry_Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white" alt="Raspberry Pi" />
+</a>
+<a href="https://en.wikipedia.org/wiki/Extended_Kalman_filter" target="_blank">
+  <img src="https://img.shields.io/badge/PID_%2F_Pure_Pursuit_%2F_EKF-444444?style=for-the-badge" alt="Control Theory" />
+</a>
 
 </div>
 
